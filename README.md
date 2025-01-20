@@ -42,7 +42,7 @@ Use Helm to install the Kube Prometheus Stack, which includes Prometheus, Alertm
 ```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
-helm install prometheus prometheus-community/kube-prometheus-stack
+helm install prometheus prometheus-community/kube-prometheus-stack --create-namespace
 ```
 
 ### 2. Create a ServiceMonitor
